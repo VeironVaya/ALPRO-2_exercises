@@ -8,6 +8,7 @@ import "fmt"
 func main() {
 	var x, y, z int
 	var isTriangleVal bool
+	
 	fmt.Scan(&x, &y, &z)
 	isTriangleVal = isTriangle(x, y, z)
 	if isTriangleVal {

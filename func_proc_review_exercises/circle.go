@@ -28,10 +28,10 @@ func main() {
 }
 
 func distance(x, y, cx, cy int) int {
-	return (x-cx)*(x-cx) + (y-cy)*(y-cy)
+	return (x-cx)*(x-cx) + (y-cy)*(y-cy) //formula
 
 }
 func iSinside(distanceVal, r int) bool {
-	return distanceVal <= r*r
+	return distanceVal <= r*r //condition
 
 }

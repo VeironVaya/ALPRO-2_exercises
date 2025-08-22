@@ -28,11 +28,13 @@ func inputCustomerData(data *ArrayCustomer, n *int) {
 func printAllCustomers(data ArrayCustomer, n int) {
 	var i int
 	for i = 0; i < n; i++ {
-		fmt.Println("\nCustomer", i+1)
-		fmt.Println("ID:", data[i].customerID)
-		fmt.Println("Name:", data[i].customerName)
-		fmt.Println("Bank:", data[i].bankName)
-		fmt.Println("Account:", data[i].accountNumber)
+		if data[i].bankName == "MANDIRI" {
+			fmt.Println("\nCustomer", i+1)
+			fmt.Println("ID:", data[i].customerID)
+			fmt.Println("Name:", data[i].customerName)
+			fmt.Println("Bank:", data[i].bankName)
+			fmt.Println("Account:", data[i].accountNumber)
+		}
 	}
 }
 

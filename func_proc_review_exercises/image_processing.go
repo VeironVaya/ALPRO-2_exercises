@@ -10,18 +10,20 @@ func main() {
 	fmt.Scanf("%c %d", &symbol, &scale)
 
 	if symbol == '+' {
-		fmt.Print(zoomIn(w, scale), zoomIn(h, scale))
+		zoomIn(w, scale) 
+		zoomIn(h, scale)
 	} else if symbol == '-' {
-		fmt.Print(zoomOut(w, scale), zoomOut(h, scale))
+		zoomOut(w, scale)
+		zoomOut(h, scale)
 
 	}
 
 }
 
-func zoomIn(num, scale int) int {
-	return num * scale
+func zoomIn(num, scale int)  {
+	fmt.Print( num * scale)
 }
 
-func zoomOut(num, scale int) int {
-	return num / scale
+func zoomOut(num, scale int)  {
+	fmt.Print( num / scale)
 }

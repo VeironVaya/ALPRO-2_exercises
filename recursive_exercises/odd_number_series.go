@@ -17,7 +17,6 @@ func oddNumSer(n int) {
 		if n%2 != 0 {
 			fmt.Print(" ", n)
 		}
-
 	}
 
 }

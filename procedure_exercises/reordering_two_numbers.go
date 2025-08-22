@@ -5,6 +5,7 @@ import "fmt"
 func main() {
 	var a, b int
 	var stop bool = false
+
 	for !stop {
 		fmt.Scan(&a, &b)
 		reordering(&a, &b)

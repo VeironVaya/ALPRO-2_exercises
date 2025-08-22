@@ -5,7 +5,9 @@ import "fmt"
 func main() {
 	var a, b, c, d int
 	var permuteVal1, permuteVal2, combinationVal1, combinationVal2 int
+
 	fmt.Scan(&a, &b, &c, &d)
+	
 	permuteVal1 = permute(a, c)
 	combinationVal1 = combination(a, c)
 	permuteVal2 = permute(b, d)
